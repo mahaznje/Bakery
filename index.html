@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lexend+Giga:wght@100..900&family=Montserrat:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Golden Bakery</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav__container">
+        <a class="nav__logo" href="#">
+          <img src="assets/logo.png" alt="img" />
+          Golden Bakery</a
+        >
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#accueil" class="nav__link">Accueil</a></li>
+            <li><a href="#nouveau" class="nav__link">Nouveautés</a></li>
+            <li><a href="#apropos" class="nav__link">À propos</a></li>
+            <li><a href="#boutique" class="nav__link">Boutique</a></li>
+
+            <li><a href="#visiter" class="nav__link">Nous visiter </a></li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-fill"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="accueil container grid" id="accueil">
+        <div class="accueil__description">
+          <h1 class="title">
+            Bienvenue <br />
+            Golden Baker
+          </h1>
+          <p class="accueil__text">
+            votre boulangerie artisanale au cœur du canton de Vaud. <br />
+            Nos maîtres boulangers façonnent chaque jour des pains d'exception,
+            alliant tradition suisse et créativité moderne pour ravir vos
+            papilles. Découvrez notre sélection de pains croustillants, tous
+            préparés avec des ingrédients locaux de première qualité.
+          </p>
+          <button onclick="window.location.href='#nouveau'" class="button">
+            Découvrez Nos Pains
+          </button>
+        </div>
+        <img src="assets/home.png" alt="image" class="accueil__img" />
+      </section>
+      <section class="nouveau container grid" id="nouveau">
+        <h1 class="title">Nouveautés</h1>
+        <div class="nouveau__content">
+          <div class="nouveau__card un" id="nouveau-desc">
+            <div class="nouveau__img-container">
+              <img src="assets/new1.png" class="nouveau__img" alt="image" />
+            </div>
+            <div class="nouveau__desc">
+              <h4 class="nouv__title">Pain aux graines de courge</h4>
+              <p class="nouv__text">
+                un pain moelleux et nutritif, parfait pour accompagner vos repas
+              </p>
+            </div>
+          </div>
+          <div class="nouveau__card deux" id="nouveau-desc">
+            <div class="nouveau__img-container">
+              <img src="assets/new2.png" class="nouveau__img" alt="image" />
+            </div>
+            <div class="nouveau__desc">
+              <h4 class="nouv__title">Baguette au levain</h4>
+              <p class="nouv__text">
+                une recette traditionnelle revisitée pour plus de saveur et de
+                digestibilité
+              </p>
+            </div>
+          </div>
+          <div class="nouveau__card trois" id="nouveau-desc">
+            <div class="nouveau__img-container">
+              <img src="assets/new3.png" class="nouveau__img" alt="image" />
+            </div>
+            <div class="nouveau__desc">
+              <h4 class="nouv__title">Brioche à la fleur d'oranger</h4>
+              <p class="nouv__text">
+                une douceur aérienne pour égayer vos petits-déjeuners
+              </p>
+            </div>
+          </div>
+        </div>
+        <button onclick="window.location.href='#boutique'" class="button">
+          Découvrez Encors
+        </button>
+      </section>
+      <section class="apropos container grid" id="apropos">
+        <div class="apropos__desc">
+          <div class="apropos__content">
+            <h1 class="apropos__title">A propos</h1>
+
+            <p class="apropos__text">
+              Golden Bakery est née d'une passion pour l'art boulanger et d'un
+              amour pour les produits du terroir vaudois. Depuis notre
+              ouverture, notre équipe de boulangers passionnés s'efforce de
+              créer des pains et des pâtisseries qui allient tradition suisse et
+              innovation.
+            </p>
+            <button onclick="window.location.href='#visiter'" class="button">
+              Nous visitez
+            </button>
+          </div>
+          <img
+            src="assets/aboutus.jpg"
+            alt="image"
+            class="apropos__img"
+            id="apropos-img"
+          />
+        </div>
+      </section>
+
+      <section class="boutique container" id="boutique">
+        <h1 class="title">Notre Boutique</h1>
+
+        <div class="boutique__container" id="boutique-container">
+          <div class="boutique__card">
+            <img src="assets/produit1.png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Mi-Blanc</h5>
+              <div class="detail">
+                <h6 class="detail__title">2,8 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="boutique__card">
+            <img src="assets/produit2.png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Pain Tessinois</h5>
+              <div class="detail">
+                <h6 class="detail__title">4.5 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="boutique__card">
+            <img src="assets/produit3 .png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Pain Torsade</h5>
+              <div class="detail">
+                <h6 class="detail__title">3,9 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="boutique__card">
+            <img src="assets/produit4.png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Pain au Maïs</h5>
+              <div class="detail">
+                <h6 class="detail__title">3,5 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="boutique__card">
+            <img src="assets/produit5.png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Pain aux graines de courg</h5>
+              <div class="detail">
+                <h6 class="detail__title">3 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="boutique__card">
+            <img src="assets/produit6.png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Baguette au levain</h5>
+              <div class="detail">
+                <h6 class="detail__title">3 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="boutique__card">
+            <img src="assets/produit7.png" alt="img" class="boutique__img" />
+            <div class="boutique__desc">
+              <h5 class="title">Brioche à la fleur d'oranger</h5>
+              <div class="detail">
+                <h6 class="detail__title">5,9 Chf</h6>
+                <a href="#" class="cart"
+                  ><i class="ri-shopping-cart-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="visiter container grid" id="visiter">
+        <div class="visite__img">
+          <img src="assets/visit.jpg" alt="img" class="img__visit" />
+          <div class="visit__content">
+            <h1 class="visiter_title">Nous visiter</h1>
+            <p class="visite__text">
+              Venez nous rendre visite et laissez-vous envoûter par les arômes
+              de nos pains fraîchement sortis du four !
+            </p>
+            <button
+              onclick="window.location.href='https://maps.app.goo.gl/h1uoZzNkTz9dS1Ws8'"
+              class="button visite__bu"
+            >
+              Voir Emplacement
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo" href="#">
+          <img src="assets/logo.png" alt="Golden Bakery logo" />
+          Golden Bakery
+        </a>
+        <div class="footer__content">
+          <div class="footer__adresse">
+            <h6><i class="ri-map-pin-line"></i>Adresse</h6>
+            <p>
+              Rue du Pain Doré 12,<br />
+              1007 Lausanne,<br />
+              Suisse
+            </p>
+          </div>
+          <div class="footer__Horaire">
+            <h6><i class="ri-timer-2-line"></i>Horaire</h6>
+            <p>Lundi à vendredi : 6h30 - 19h00</p>
+            <p>Samedi : 7h00 - 18h00</p>
+            <p>Dimanche : 7h00 - 12h00</p>
+          </div>
+          <div class="footer__contact">
+            <h6><i class="ri-customer-service-line"></i>Contact</h6>
+            <p>
+              +41 21 123 45 67<br />
+              contact@goldenbakery.ch
+            </p>
+          </div>
+          <div class="footer__social">
+            <h6><i class="ri-chat-1-line"></i>Réseau Sociaux</h6>
+            <div class="social">
+              <a href="#" aria-label="Instagram"
+                ><i class="ri-instagram-line"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__policy">
+        <a href="#" class="footer__link">Conditions générales</a>
+        <a href="#" class="footer__link">Politique de confidentialité</a>
+      </div>
+      <span class="footer__copy">
+        &#169; Tous droits réservés par Bedimcode
+      </span>
+    </footer>
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
