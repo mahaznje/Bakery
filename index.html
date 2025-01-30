@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -62,7 +62,14 @@
             Découvrez Nos Pains
           </button>
         </div>
-        <img src="assets/home.png" alt="image" class="accueil__img" />
+        <div class="image__align">
+          <img
+            src="assets/home.png"
+            alt="image"
+            class="accueil__img"
+            id="accueil-img"
+          />
+        </div>
       </section>
       <section class="nouveau container grid" id="nouveau">
         <h1 class="title">Nouveautés</h1>
@@ -132,7 +139,7 @@
       </section>
 
       <section class="boutique container" id="boutique">
-        <h1 class="title">Notre Boutique</h1>
+        <h1>Notre Boutique</h1>
 
         <div class="boutique__container" id="boutique-container">
           <div class="boutique__card">
